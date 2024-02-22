@@ -28,6 +28,8 @@ main{
     
 }
 .card{
+    min-height: 400px;
+    max-width: 600px;
     background-color: var(--White);
     z-index: 1;
     padding: 35px 20px;
@@ -37,9 +39,11 @@ main{
 .que_card{
     /* padding: 0px 20px; */
     margin: 20px 20px 0px 20px;
+
 }
 .que_ans{
     padding: 15px 10px;
+    cursor: pointer;
 }
 .que{
     display: flex;
@@ -48,6 +52,7 @@ main{
     font-weight: 700;
     justify-content: space-between;
     margin-bottom: 10px;
+    
 }
 
 .ans{
@@ -60,7 +65,8 @@ main{
     background-color: var(--Lightpink);
 }
 .heading{
-   display: flex;
+    font-size: 22px;
+    display: flex;
     align-items: center;
     gap: 20px;
     margin: 0px 15px;
