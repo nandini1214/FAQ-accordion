@@ -29,7 +29,7 @@ main{
 }
 .card{
     background-color: var(--White);
-    width:35%;
+    z-index: 1;
     padding: 35px 20px;
     font-size: var(--fontsize);
     border-radius: 20px;
@@ -70,4 +70,24 @@ main{
     top: 0;
     width:100%;
     
+    
+}
+.bgimagemobile{
+    display: none;
+}
+@media (max-width : 375px) {
+    .bgimage{
+        display: none;
+    }
+    .bgimagemobile{
+        display: block;
+        position: absolute;
+    top: 0;
+    width:100%;
+    }
+    .card{
+        width: 300px;
+        margin: 10px;
+        min-height: 500px;
+    }
 }
